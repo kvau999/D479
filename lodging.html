@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lodging - Taniti Island</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    #resorts .highlights-container img {
+      height: 600px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -25,7 +31,7 @@
 
   <main>
     <!-- Your Second Home Section -->
-    <section id="your-second-home">
+    <section id="your-second-home" style="background-color: #e3f2fd;">
       <div class="section-content">
         <div class="text">
           <h2>YOUR SECOND HOME</h2>
@@ -37,18 +43,14 @@
 
     <!-- Resorts Section -->
     <section id="resorts">
-      <div class="dining-content">
-        <h2>Resorts</h2>
-        <p>Discover the perfect retreat for your dream vacation at one of Taniti's premium resorts.</p>
-        <div class="food-grid">
-          <div class="food-item">
-            <img src="images/luxury-resort.jpg" alt="Luxury Resort">
-            <p>Luxury Resort</p>
-          </div>
-          <div class="food-item">
-            <img src="images/serene-resort.jpg" alt="Serene Resort">
-            <p>Serene Resort</p>
-          </div>
+      <div class="highlights-container">
+        <div>
+          <img src="images/luxury-resort.jpg" alt="Luxury Resort">
+          <p>Luxury Resort</p>
+        </div>
+        <div>
+          <img src="images/serene-resort.jpg" alt="Serene Resort">
+          <p>Serene Resort</p>
         </div>
       </div>
     </section>

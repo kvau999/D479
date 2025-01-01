@@ -1,6 +1,8 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
+  font-size: 18px; /* Increased font size for base text */
+  line-height: 1.6; /* Better readability */
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
@@ -10,6 +12,7 @@ body {
 a {
   text-decoration: none;
   color: #004466;
+  font-size: 18px; /* Adjust font size for links */
 }
 
 a.button {
@@ -20,6 +23,7 @@ a.button {
   color: white;
   border-radius: 5px;
   text-align: center;
+  font-size: 18px; /* Ensure button text is also larger */
 }
 
 a.button:hover {
@@ -31,7 +35,7 @@ a.button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(107, 200, 218); /* Light blue */
+  background-color: rgb(107, 200, 218);
   padding: 10px 20px;
 }
 
@@ -53,6 +57,7 @@ a.button:hover {
 .nav-links a {
   color: white;
   font-weight: bold;
+  font-size: 18px; /* Larger navbar links */
 }
 
 /* Main Sections */
@@ -60,42 +65,56 @@ section {
   padding: 40px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
-  width: 80%;
+  justify-content: space-between;
   gap: 20px;
-}
-
-#food-options {
-  background-color: #e3f2fd; /* Light pastel color */
-  background-image: url('images/pattern.png'); /* Add a subtle pattern */
-  background-size: cover; /* Make it cover the area */
-  padding: 40px 0; /* Adjust padding for balance */
-}
-
-
-.text {
-  flex: 1;
+  width: 80%;
 }
 
 .section-image {
-  max-width: 350px;
-  max-height: 250px;
+  max-width: 400px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-.dining-content {
-  text-align: center;
-  padding: 40px;
-  background-color: #e3f2fd;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+.text {
+  max-width: 500px;
+  text-align: left;
+  font-size: 20px; /* Larger text for content */
 }
 
+/* Highlights Section */
+.highlights-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+}
+
+.highlights-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.highlights-container p {
+  text-align: center;
+  font-size: 18px; /* Larger text for highlight captions */
+  color: #004466;
+}
+
+/* Food Grid */
 .food-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -116,7 +135,7 @@ section {
 
 .food-item p {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 18px; /* Larger food item captions */
   color: #004466;
 }
 
@@ -126,6 +145,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  font-size: 16px; /* Slightly larger footer text */
 }
 
 footer nav ul {
@@ -147,24 +167,26 @@ footer nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Specific Section Backgrounds */
-#car-rentals, #ground-travel {
-  background-color: #e3f2fd;
-}
-
-#air-travel {
-  background-color: #ffffff;
-}
-
+/* FAQ Section */
 .faq-container {
   background-color: #e3f2fd;
-  padding: 40px 20px; /* Add padding horizontally */
-  margin-bottom: 0; /* Remove bottom margins */
+  padding: 40px 20px;
+  margin-bottom: 0;
+  font-size: 18px; /* Larger FAQ text */
 }
 
-main {
-  min-height: calc(100vh - 100px); /* Adjust based on header/footer height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* Responsiveness */
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+  }
+
+  .text, .section-image {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .highlights-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
