@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniti Island</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .highlights-grid div img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .testimonials-section {
+      background-color: #e3f2fd;
+      padding: 40px;
+      text-align: center;
+    }
+    .testimonial {
+      margin: 20px auto;
+      max-width: 600px;
+      font-style: italic;
+      color: #555;
+    }
+    .testimonial footer {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="images/TanitiIsland.png" alt="Taniti Island Logo" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Welcome Section -->
+    <section id="welcome">
+      <div class="section-content">
+        <div class="text">
+          <h2>Welcome!</h2>
+          <p>We're excited that you're considering Taniti, a charming tropical island in the Pacific, for your vacation! Whether you're planning a wedding, family getaway, honeymoon, or business event, we're here to meet your needs.</p>
+          <p>Explore our website for more details on local activities, accommodations, dining, and more!</p>
+          <a href="about.html" class="button">Read more about the island</a>
+        </div>
+        <img src="images/Playing.jpg" alt="Taniti Island" class="section-image">
+      </div>
+    </section>
+
+    <!-- Featured Highlights Section -->
+    <section id="highlights" style="background-color: #e3f2fd; padding: 40px;">
+      <h2 style="text-align: center;">Discover Taniti's Highlights</h2>
+      <div class="highlights-grid">
+        <div>
+          <img src="images/beaches.jpg" alt="Beaches">
+          <p>Pristine Beaches: Relax on soft white sands and enjoy the crystal-clear waters of Yellow Leaf Bay.</p>
+        </div>
+        <div>
+          <img src="images/rainforest.jpg" alt="Rainforest">
+          <p>Lush Rainforests: Embark on an adventure through our tropical rainforest with scenic hikes and zip-lining.</p>
+        </div>
+        <div>
+          <img src="images/volcano.jpg" alt="Volcano">
+          <p>Active Volcano: Hike to the summit of Taniti’s active volcano for breathtaking views.</p>
+        </div>
+        <div>
+          <img src="images/entertainment.jpg" alt="Entertainment">
+          <p>Exciting Activities: Enjoy snorkeling, visiting art galleries, or playing golf at our new nine-hole course.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <h2>What Our Visitors Say</h2>
+      <div class="testimonial">
+        <p>"Taniti is a paradise like no other. The beaches are stunning, and the rainforest adventures were unforgettable!"</p>
+        <footer>— Sarah W.</footer>
+      </div>
+      <div class="testimonial">
+        <p>"My family loved exploring the volcano and zip-lining through the rainforest. It was a once-in-a-lifetime trip!"</p>
+        <footer>— James T.</footer>
+      </div>
+      <div class="testimonial">
+        <p>"The accommodations were amazing, and the local cuisine was delicious. Can't wait to visit again!"</p>
+        <footer>— Emily R.</footer>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      <p>Location: 23432 Neodog Ct., Klendathu, Taniti</p>
+    </address>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="lodging.html">Lodging</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 Taniti Island</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Taniti Island</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* FAQ Styles */
+    .faq-container {
+      background-color: #e3f2fd;
+      padding: 40px;
+    }
+
+    .faq-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .faq-item {
+      flex: 1 1 calc(25% - 20px); /* Adjust width for responsiveness */
+      max-width: 250px;
+      margin-bottom: 15px;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #004466;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .faq-question:hover {
+      background-color: #00334d;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      color: #333;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="images/TanitiIsland.png" alt="Taniti Island Logo" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="entertainment.html">Entertainment</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="lodging.html">Lodging</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- About the Island Section -->
+    <section id="about-island" style="background-color: #e3f2fd; padding: 40px;">
+      <div class="section-content">
+        <div class="text">
+          <h2>ABOUT THE ISLAND</h2>
+          <p>Taniti is a small, remote tropical island in the Pacific, with less than 500 square miles. Boasting sandy and rocky beaches, a safe harbor, lush rainforests, and a mountainous interior with an active volcano, it offers something for every visitor. The island has an indigenous population of about 20,000 and was historically known for fishing and agriculture.</p>
+        </div>
+        <img src="images/about-island.jpg" alt="Island Sunset" class="section-image">
+      </div>
+    </section>
+
+    <!-- Come and Relax Section -->
+    <section id="come-relax" style="background-color: #ffffff; padding: 40px;">
+      <div class="section-content reverse">
+        <div class="text">
+          <h2>COME AND RELAX</h2>
+          <p>Escape to our island paradise, where you can unwind and enjoy the ultimate relaxation by the pool. Surrounded by crystal-clear waters and lush tropical landscapes, it's the perfect setting to bask in the sun, sip a refreshing drink, and let all your worries melt away. Whether you're lounging by the water, taking a leisurely swim, or simply enjoying the serene atmosphere, the poolside experience offers a peaceful retreat from the everyday hustle. Come and indulge in the tranquil beauty of our island.</p>
+        </div>
+        <img src="images/come-relax.jpg" alt="Poolside Relaxation" class="section-image">
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-container">
+      <h2>FREQUENTLY ASKED QUESTIONS</h2>
+      <div class="faq-items">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>What power outlets are used on Taniti?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Power outlets are 120 volts, the same as in the United States.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>What is the drinking age on Taniti?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>The drinking age is 18 and is not strictly enforced.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>Are English speakers common on Taniti?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by older residents.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>What is the local currency on Taniti?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>Taniti uses the U.S. dollar, but many businesses also accept euros and yen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      <p>Location: 23432 Neodog Ct., Klendathu, Taniti</p>
+    </address>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="lodging.html">Lodging</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 Taniti Island</p>
+  </footer>
+
+  <script>
+    function toggleAnswer(element) {
+      const answer = element.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
